@@ -207,7 +207,7 @@ namespace ClinicManagement.Controllers
             {
                 //var url = "http://127.0.0.1:5000/extract"; // Flask API endpoint
 
-                var url = "https://muratpoyraz.pythonanywhere.com/extract";
+                var url = "https://muratpoyraz1.pythonanywhere.com/extract";
 
                 var fileContent = new ByteArrayContent(System.IO.File.ReadAllBytes(filePath));
                 var formData = new MultipartFormDataContent();
@@ -239,7 +239,7 @@ namespace ClinicManagement.Controllers
             {
                 //var url = "http://127.0.0.1:5000/predict"; // Flask API tahmin endpoint
 
-                var url = "https://muratpoyraz.pythonanywhere.com/predict";
+                var url = "https://muratpoyraz1.pythonanywhere.com/predict";
 
 
                 var json = JsonConvert.SerializeObject(new { features = extractedData });
